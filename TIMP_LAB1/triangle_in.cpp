@@ -1,11 +1,11 @@
 #include "stdafx.h"
 #include <fstream>
-#include "circle_atd.h"
+#include "triangle_atd.h"
 using namespace std;
 namespace simple_shapes {
 	// ¬вод параметров круга из потока
-	void In(circle &t, ifstream &ifst)
+	void In(triangle &t, ifstream &ifst)
 	{
-		ifst >> t.a >> t.b >> t.colour;
+		ifst >> t.a >> t.b >> t.c >> t.colour;
 	}
 } // end simple_shapes namespace

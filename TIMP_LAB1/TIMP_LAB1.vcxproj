@@ -151,6 +151,7 @@
     <ClInclude Include="shape_atd.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="triangle_atd.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="circle_In.cpp" />
@@ -169,6 +170,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="TIMP_LAB1.cpp" />
+    <ClCompile Include="triangle_in.cpp" />
+    <ClCompile Include="triangle_Out.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
