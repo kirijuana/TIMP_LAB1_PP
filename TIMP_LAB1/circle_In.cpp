@@ -6,6 +6,6 @@ namespace simple_shapes {
 	// ¬вод параметров круга из потока
 	void In(circle &t, ifstream &ifst)
 	{
-		ifst >> t.a >> t.b >> t.colour;
+		ifst >> t.x >> t.R >> t.colour;
 	}
 } // end simple_shapes namespace
