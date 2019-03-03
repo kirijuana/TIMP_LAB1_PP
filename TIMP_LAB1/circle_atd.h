@@ -6,6 +6,7 @@ namespace simple_shapes {
 	struct circle {
 		int a, b; // целочисленные координата центра окружности,
 		      // радиус
+		char colour[10];
 	};
 } // end simple_shapes namespace
 #endif
