@@ -1,6 +1,6 @@
 
-#ifndef __triangle_atd__
-#define __triangle_atd__
+#ifndef __circle_atd__
+#define __circle_atd__
 namespace simple_shapes {
 	// круг
 	struct circle {
