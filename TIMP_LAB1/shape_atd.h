@@ -11,6 +11,7 @@ namespace simple_shapes {
 		enum key { RECTANGLE, CIRCLE, TRIANGLE };
 		key k; // ключ
 			   // используемые альтернативы
+		int angle;
 		union { // используем включение
 			rectangle r;
 			circle c;
