@@ -16,5 +16,11 @@ namespace simple_shapes {
 			cout << "Incorrect rectangle value - R = 0";
 		}
 		return r.b * 2 * 3.14;
+		if (r.b * 2 * 3.14 <= 0)
+
+		{
+			cout << "No roots perimeter circle!" << endl;
+			return 0;
+		}
 	}
 } // end simple_shapes namespace

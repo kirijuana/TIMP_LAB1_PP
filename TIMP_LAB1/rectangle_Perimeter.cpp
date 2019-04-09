@@ -24,5 +24,10 @@ namespace simple_shapes {
 			cout << "Incorrect rectangle value - y < 0";
 		}
 		return r.x + r.y;
+		if (r.x + r.y <= 0)
+		{
+			cout << "No roots perimeter rectangle!" << endl;
+			return 0;
+		}
 	}
 }// end simple_shapes namespace

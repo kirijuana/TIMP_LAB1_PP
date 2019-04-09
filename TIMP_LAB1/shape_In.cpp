@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include <fstream>
 #include "shape_atd.h"
+#include <iostream>
 using namespace std;
 namespace simple_shapes {
 	// Сигнатуры требуемых внешних функций
@@ -33,6 +34,11 @@ namespace simple_shapes {
 			return 0;
 		}
 		ifst >> sp->angle;
+		if (ifst.fail())
+
+		{
+			cout << "Wrong input shape!" << endl;
+		}
 		return sp;
 	}
 } // end simple_shapes namespace

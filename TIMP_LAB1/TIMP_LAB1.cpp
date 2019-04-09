@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
 	ifstream ifst(argv[1]);
 	ofstream ofst(argv[2]);
 
-	if (!(ifst.is_open())) {
+	if (!(ifst)) {
 		cout << "File not find\n";
 		cout << "exit";
 		cin.get();  //Это если окошко сразу закрывается, задерживаем
@@ -38,9 +38,7 @@ int main(int argc, char* argv[]) {
 		ifst.close();
 
 	}
-
-
-	if (!(ofst.is_open())) {
+	if (!(ofst)) {
 		cout << "File not find\n";
 		cout << "exit";
 		cin.get();  //Это если окошко сразу закрывается, задерживаем
@@ -61,5 +59,6 @@ int main(int argc, char* argv[]) {
 	Out(c, ofst);
 	cout << "Stop" << endl;
 	return 0;
-}
+}
+
 

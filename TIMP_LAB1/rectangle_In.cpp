@@ -24,5 +24,10 @@ namespace simple_shapes {
 			cout << "Incorrect rectangle value - y < 0";
 		}
 		ifst >> r.x >> r.y >> r.colour;
+		if (ifst.fail())
+
+		{
+			cout << "Wrong input rectangle!" << endl;
+		}
 	}
 } // end simple_shapes namespace
