@@ -7,8 +7,14 @@ namespace simple_shapes {
 
 	int Perimeter(circle &r)
 	{
-		if (r.a <= 0 || r.b <= 0)
-			cout << "Incorrect circle value";
-		return r.a + r.b;
+		if (r.b < 0)
+		{
+			cout << "Incorrect rectangle value - R < 0";
+		}
+		if (r.b == 0)
+		{
+			cout << "Incorrect rectangle value - R = 0";
+		}
+		return r.b * 2 * 3.14;
 	}
 } // end simple_shapes namespace
