@@ -8,5 +8,6 @@ namespace simple_shapes {
 		char colour[10];
 	};
 } // end simple_shapes namespace
-#endif
+#endif
+
 

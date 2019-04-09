@@ -17,8 +17,39 @@ int main(int argc, char* argv[]) {
 			"Waited: command infile outfile" << endl;
 		exit(1);
 	}
+	
 	ifstream ifst(argv[1]);
 	ofstream ofst(argv[2]);
+
+	if (!(ifst.is_open())) {
+		cout << "File not find\n";
+		cout << "exit";
+		cin.get();  //Это если окошко сразу закрывается, задерживаем
+		return -1;
+	}
+	else {
+		cout << "Input file open\n";
+	
+		long file_size;
+		ifst.seekg(0, ios::end);
+		file_size = ifst.tellg();
+		if (file_size == 0)
+			cout << "File is empty" << endl; 
+		ifst.close();
+
+	}
+
+
+	if (!(ofst.is_open())) {
+		cout << "File not find\n";
+		cout << "exit";
+		cin.get();  //Это если окошко сразу закрывается, задерживаем
+		return -1;
+	}
+	else {
+		cout << "Output file open\n";
+	}
+
 	cout << "Start" << endl;
 	container c;
 	Init(c);

@@ -16,4 +16,5 @@ namespace simple_shapes {
 			ofst << "perimeter = "
 				<< Perimeter(*(c.cont[i])) << endl;
 		}
-	}	} // end simple_shapes namespace
+	}
+	} // end simple_shapes namespace

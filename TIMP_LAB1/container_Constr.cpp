@@ -12,4 +12,4 @@ namespace simple_shapes {
 		}
 		c.len = 0;
 	}
-} // end simple_shapes namespace
+} // end simple_shapes namespace
