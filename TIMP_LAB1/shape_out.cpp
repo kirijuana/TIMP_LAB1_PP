@@ -21,5 +21,6 @@ namespace simple_shapes {
 		default:
 			ofst << "Incorrect figure!" << endl;
 		}
-	}
+		ofst << "angle = " << s.angle << endl;
+	}
 } // end simple_shapes namespace

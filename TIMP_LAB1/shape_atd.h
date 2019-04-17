@@ -1,6 +1,7 @@
 #ifndef __shape_atd__
 #define __shape_atd__
 // Подключение необходимых типов данных
+#include "rectangle_atd.h"
 #include "circle_atd.h"
 #include "triangle_atd.h"
 #include "rectangle_atd.h"
@@ -11,6 +12,7 @@ namespace simple_shapes {
 		// значения ключей для каждой из фигур
 		enum key { RECTANGLE, CIRCLE, TRIANGLE };
 		key k; // ключ
+		int angle;
 			   // используемые альтернативы
 		union { // используем включение
 			rectangle r;
@@ -20,4 +22,4 @@ namespace simple_shapes {
 		};
 	};
 } // end simple_shapes namespace
-#endif
+#endif

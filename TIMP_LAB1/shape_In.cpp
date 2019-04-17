@@ -18,7 +18,6 @@ namespace simple_shapes {
 			sp = new shape;
 			sp->k = shape::key::RECTANGLE;
 			In(sp->r, ifst);
-			return sp;
 		case 2:
 			sp = new shape;
 			sp->k = shape::key::CIRCLE;
@@ -28,9 +27,10 @@ namespace simple_shapes {
 			sp = new shape;
 			sp->k = shape::key::TRIANGLE;
 			In(sp->t, ifst);
-			return sp;
 		default:
 			return 0;
 		}
+		ifst >> sp->angle;
+		return sp;
 	}
 } // end simple_shapes namespace
