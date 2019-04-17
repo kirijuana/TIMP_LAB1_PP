@@ -7,6 +7,6 @@ namespace simple_shapes {
 	void Out(circle &t, ofstream &ofst)
 	{
 		ofst << "It is Circle: x = "
-			<< t.a << ", R = " << t.b << ", Colour =  " << t.colour << endl;
+			<< t.a << ", R = " << t.b << ", Colour = " << t.colour <<  endl;
 	}
 } // end simple_shapes namespace
