@@ -77,10 +77,16 @@
     <ClCompile Include="rectangle_Perimeter.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
-    <ClCompile Include="circle_Perimeter.cpp.cpp">
+    <ClCompile Include="shape_Perimeter.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
-    <ClCompile Include="shape_Perimeter.cpp">
+    <ClCompile Include="triangle_in.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="triangle_Out.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="circle_Perimeter.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
   </ItemGroup>
