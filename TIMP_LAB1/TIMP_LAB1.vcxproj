@@ -161,6 +161,7 @@
     <ClCompile Include="container_In.cpp" />
     <ClCompile Include="container_Out.cpp" />
     <ClCompile Include="container_Sort.cpp" />
+    <ClCompile Include="container_OutRect.cpp" />
     <ClCompile Include="rectangle_In.cpp" />
     <ClCompile Include="rectangle_Out.cpp" />
     <ClCompile Include="rectangle_Perimeter.cpp" />
