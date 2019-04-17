@@ -12,11 +12,11 @@ namespace simple_shapes {
 		switch (s.k) {
 		case shape::key::RECTANGLE:
 			return Perimeter(s.r);
-		case shape::key::TRIANGLE:
+		case shape::key::CIRCLE:
 				return Perimeter(s.t);
 		default:
 			return -1;
 		}
 	}
 } // end simple_shapes namespace
-
+
