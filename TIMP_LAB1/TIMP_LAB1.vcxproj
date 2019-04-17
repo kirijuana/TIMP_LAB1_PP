@@ -156,13 +156,16 @@
   <ItemGroup>
     <ClCompile Include="circle_In.cpp" />
     <ClCompile Include="circle_Out.cpp" />
+    <ClCompile Include="circle_Perimeter.cpp.cpp" />
     <ClCompile Include="container_Constr.cpp" />
     <ClCompile Include="container_In.cpp" />
     <ClCompile Include="container_Out.cpp" />
     <ClCompile Include="rectangle_In.cpp" />
     <ClCompile Include="rectangle_Out.cpp" />
+    <ClCompile Include="rectangle_Perimeter.cpp" />
     <ClCompile Include="shape_In.cpp" />
     <ClCompile Include="shape_out.cpp" />
+    <ClCompile Include="shape_Perimeter.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
