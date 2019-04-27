@@ -18,7 +18,17 @@ int main(int argc, char* argv[]) {
 		exit(1);
 	}
 	ifstream ifst(argv[1]);
-	ofstream ofst(argv[2]);
+	//ifst.open("C:\\Users\\kirijuana\\Desktop\\in.txt.txt");
+	if (!ifst)
+	{
+		return -1;
+	}
+	ofstream ofst(argv[2]);;
+	//ofst.open("C:\\Users\\kirijuana\\Desktop\\out.txt.txt");
+	if (!ofst)
+	{
+		return -1;
+	}
 	cout << "Start" << endl;
 	container c;
 	Init(c);
