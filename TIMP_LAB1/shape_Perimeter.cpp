@@ -6,6 +6,7 @@ namespace simple_shapes {
 	// —игнатуры требуемых внешних функций
 	int Perimeter(rectangle &r);
 	int Perimeter(circle &c);
+	int Perimeter(triangle &t);
 	// ¬вод параметров обобщенной фигуры из файла
 	int Perimeter(shape &s)
 	{
@@ -14,6 +15,8 @@ namespace simple_shapes {
 			return Perimeter(s.r);
 		case shape::key::CIRCLE:
 				return Perimeter(s.c);
+		case shape::key::TRIANGLE:
+			return Perimeter(s.t);
 		default:
 			return -1;
 		}

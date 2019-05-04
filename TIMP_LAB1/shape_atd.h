@@ -12,7 +12,7 @@ namespace simple_shapes {
 		// значения ключей для каждой из фигур
 		enum key { RECTANGLE, CIRCLE, TRIANGLE };
 		key k; // ключ
-		int angle;
+		float density;
 			   // используемые альтернативы
 		union { // используем включение
 			rectangle r;

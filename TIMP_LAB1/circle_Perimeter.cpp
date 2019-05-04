@@ -4,9 +4,9 @@
 using namespace std;
 namespace simple_shapes {
 	// Вывод параметров круга в поток
-	int Perimeter(circle &r)
+	int Perimeter(circle &c)
 	{
-		return r.a + r.b;
+		return c.R * 2 * 3.1415;
 	}
 } // end simple_shapes namespace
 

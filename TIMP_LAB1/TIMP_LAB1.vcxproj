@@ -178,6 +178,7 @@
     <ClCompile Include="TIMP_LAB1.cpp" />
     <ClCompile Include="triangle_in.cpp" />
     <ClCompile Include="triangle_Out.cpp" />
+    <ClCompile Include="triangle_Perimeter.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
