@@ -10,6 +10,8 @@ namespace simple_shapes {
 	void Clear(container &c);
 	void In(container &c, ifstream &ifst);
 	void Out(container &c, ofstream &ofst);
+	void Sort(container &c);
+	void OutRect(container &c, ofstream &ofst);
 }
 using namespace simple_shapes;
 int main(int argc, char* argv[]) {
@@ -19,13 +21,27 @@ int main(int argc, char* argv[]) {
 		exit(1);
 	}
 	ifstream ifst(argv[1]);
+	if (!ifst)
+	{
+		return -1;
+	}
 	ofstream ofst(argv[2]);
+	if (!ofst)
+	{
+		return -1;
+	}
 	cout << "Start" << endl;
 	container c;
 	Init(c);
 	In(c, ifst);
 	ofst << "Filled container. " << endl;
+	ofst << "Main container. " << endl;
 	Out(c, ofst);
+	Sort(c);
+	ofst << "Sort container. " << endl;
+	Out(c, ofst);
+	ofst << "OutRect container. " << endl;
+	OutRect(c, ofst);
 	Clear(c);
 	ofst << "Empty container. " << endl;
 	Out(c, ofst);

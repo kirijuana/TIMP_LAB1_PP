@@ -18,15 +18,17 @@ namespace simple_shapes {
 			sp = new shape;
 			sp->k = shape::key::RECTANGLE;
 			In(sp->r, ifst);
+			break;
 		case 2:
 			sp = new shape;
 			sp->k = shape::key::CIRCLE;
 			In(sp->c, ifst);
-			return sp;
+			break;
 		case 3:
 			sp = new shape;
 			sp->k = shape::key::TRIANGLE;
 			In(sp->t, ifst);
+			break;
 		default:
 			return 0;
 		}
