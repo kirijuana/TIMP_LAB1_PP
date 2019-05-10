@@ -14,22 +14,27 @@ namespace simple_shapes {
 		shape *sp;
 		int k;
 		ifst >> k;
+		if (k != 1 && k != 2 && k != 3)
+		{
+			cout << "Incorrect value Key";
+			exit(1);
+		}
 		switch (k) {
 		case 1:
 			sp = new shape;
 			sp->k = shape::key::RECTANGLE;
 			In(sp->r, ifst);
-			return sp;
+			break;
 		case 2:
 			sp = new shape;
 			sp->k = shape::key::CIRCLE;
 			In(sp->c, ifst);
-			return sp;
+			break;
 		case 3:
 			sp = new shape;
 			sp->k = shape::key::TRIANGLE;
 			In(sp->t, ifst);
-			return sp; 
+			break;
 		default:
 			return 0;
 		}

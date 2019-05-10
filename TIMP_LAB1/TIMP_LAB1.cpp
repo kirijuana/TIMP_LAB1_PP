@@ -29,14 +29,6 @@ int main(int argc, char* argv[]) {
 	}
 	else {
 		cout << "Input file open\n";
-	
-		long file_size;
-		ifst.seekg(0, ios::end);
-		file_size = ifst.tellg();
-		if (file_size == 0)
-			cout << "File is empty" << endl; 
-		ifst.close();
-
 	}
 	if (!(ofst)) {
 		cout << "File not find\n";

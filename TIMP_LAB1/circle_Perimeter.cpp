@@ -10,17 +10,12 @@ namespace simple_shapes {
 		if (c.R < 0)
 		{
 			cout << "Incorrect rectangle value - R < 0";
+			exit(1);
 		}
 		if (c.R == 0)
 		{
 			cout << "Incorrect rectangle value - R = 0";
-		}
-		
-		while (!(cin >> c.R) || (cin.peek() != '\n'))
-		{
-			cin.clear();
-			while (cin.get() != '\n');
-			cout << "Error!" << endl;
+			exit(1);
 		}
 		return c.R * 2 * 3.14;
 	}

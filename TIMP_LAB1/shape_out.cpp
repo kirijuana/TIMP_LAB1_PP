@@ -18,9 +18,10 @@ namespace simple_shapes {
 			break;
 		case shape::key::TRIANGLE:
 			Out(s.t, ofst); 
+			break;
 		default:
 			ofst << "Incorrect figure!" << endl;
 		}
-		ofst << "angle = " << s.density << endl;
+		ofst << "density = " << s.density << endl;
 	}
 } // end simple_shapes namespace
