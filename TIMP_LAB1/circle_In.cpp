@@ -5,28 +5,32 @@
 using namespace std;
 namespace simple_shapes {
 	// ¬вод параметров круга из потока
-	void In(circle &t, ifstream &ifst)
+	void In(circle &c, ifstream &ifst)
 	{
-		if (t.a < 0)
+		if (c.x < 0)
 		{
 			cout << "Incorrect rectangle value - x < 0";
 		}
-		if (t.b < 0)
+		if (c.y < 0)
 		{
 			cout << "Incorrect rectangle value - R < 0";
 		}
-		if (t.a == 0)
+		if (c.x == 0)
 		{
 			cout << "Incorrect rectangle value - x = 0";
 		}
-		if (t.b == 0)
+		if (c.y == 0)
 		{
 			cout << "Incorrect rectangle value - R = 0";
 		}
-		ifst >> t.a >> t.b >> t.colour;
-		if (ifst.fail())
+		if (c.R == 0)
 		{
-			cout << "Wrong input!" << endl;
+			cout << "Incorrect rectangle value - R = 0";
 		}
+		if (c.R < 0)
+		{
+			cout << "Incorrect rectangle value - R < 0";
+		}
+		ifst >> c.x >> c.y >> c.R >> c.colour;
 	}
 } // end simple_shapes namespace

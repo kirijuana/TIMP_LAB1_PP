@@ -5,22 +5,23 @@
 using namespace std;
 namespace simple_shapes {
 
-	int Perimeter(circle &r)
+	int Perimeter(circle &c)
 	{
-		if (r.b < 0)
+		if (c.R < 0)
 		{
 			cout << "Incorrect rectangle value - R < 0";
 		}
-		if (r.b == 0)
+		if (c.R == 0)
 		{
 			cout << "Incorrect rectangle value - R = 0";
 		}
-		return r.b * 2 * 3.14;
-		if (r.b * 2 * 3.14 <= 0)
-
+		
+		while (!(cin >> c.R) || (cin.peek() != '\n'))
 		{
-			cout << "No roots perimeter circle!" << endl;
-			return 0;
+			cin.clear();
+			while (cin.get() != '\n');
+			cout << "Error!" << endl;
 		}
+		return c.R * 2 * 3.14;
 	}
 } // end simple_shapes namespace

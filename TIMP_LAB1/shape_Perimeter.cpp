@@ -3,10 +3,10 @@
 #include "shape_atd.h"
 using namespace std;
 namespace simple_shapes {
-	// Ñèãíàòóðû òðåáóåìûõ âíåøíèõ ôóíêöèé
+	
 	int Perimeter(rectangle &r);
 	int Perimeter(circle &c);
-	// Ââîä ïàðàìåòðîâ îáîáùåííîé ôèãóðû èç ôàéëà
+	int Perimeter(triangle &t);
 	int Perimeter(shape &s)
 	{
 		switch (s.k) {
@@ -15,6 +15,8 @@ namespace simple_shapes {
 			return Perimeter(s.r);
 		case shape::key::CIRCLE:
 			return Perimeter(s.c);
+		case shape::key::TRIANGLE:
+			return Perimeter(s.t);
 		default:
 			return -1;
 		}

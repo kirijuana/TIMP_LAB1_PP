@@ -28,9 +28,5 @@ namespace simple_shapes {
 			cout << "Incorrect rectangle value - c = 0";
 		}
 		ifst >> t.a >> t.b >> t.c >> t.colour;
-		if (ifst.fail())
-		{
-			cout << "Wrong input triangle!" << endl;
-		}
 	}
 } // end simple_shapes namespace

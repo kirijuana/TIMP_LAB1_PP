@@ -33,7 +33,7 @@ namespace simple_shapes {
 		default:
 			return 0;
 		}
-		ifst >> sp->angle;
+		ifst >> sp->density;
 		if (ifst.fail())
 
 		{
