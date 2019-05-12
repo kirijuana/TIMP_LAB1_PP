@@ -8,17 +8,16 @@
 
 namespace simple_shapes {
 	// структура, обобщающая все имеющиеся фигуры
-	struct shape {
+	struct Shape {
 		// значения ключей для каждой из фигур
 		enum key { RECTANGLE, CIRCLE, TRIANGLE };
 		key k; // ключ
 		float density;
 			   // используемые альтернативы
 		union { // используем включение
-			rectangle r;
-			circle c;
-			triangle t;
-			
+			Rectangle r;
+			Circle c;
+			Triangle t;
 		};
 	};
 } // end simple_shapes namespace

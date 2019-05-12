@@ -1,12 +1,13 @@
 #include "stdafx.h"
 #include "container_atd.h"
 #include "shape_atd.h"
+
 namespace simple_shapes {
 	// Инициализация контейнера
-	void Init(container &c) { c.len = 0; }
+	void Init(Container &c) { c.len = 0; }
 	// Очистка контейнера от элементов
 	// (освобождение памяти)
-	void Clear(container &c) {
+	void Clear(Container &c) {
 		for (int i = 0; i < c.len; i++) {
 			delete c.cont[i];
 		}

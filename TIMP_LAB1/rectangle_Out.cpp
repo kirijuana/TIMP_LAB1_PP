@@ -6,7 +6,7 @@ using namespace std;
 
 namespace simple_shapes {
 	// Вывод параметров прямоугольника в поток
-	void Out(rectangle &r, ofstream &ofst) {
+	void Out(Rectangle &r, ofstream &ofst) {
 		ofst << "It is Rectangle: x = " << r.x
 			<< ", y = " << r.y << ", Colour = " << r.colour << endl;
 	}

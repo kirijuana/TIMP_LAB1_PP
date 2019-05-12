@@ -1,8 +1,8 @@
 #ifndef __triangle_atd__
 #define __triangle_atd__
+
 namespace simple_shapes {
-	// круг
-	struct triangle {
+	struct Triangle {
 		int a, b, c; // целочисленные координата вершин
 		char colour[10];
 	};

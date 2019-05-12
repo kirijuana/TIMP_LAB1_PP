@@ -1,21 +1,23 @@
 #include "stdafx.h"
 #include <fstream>
 #include "shape_atd.h"
+
 using namespace std;
+
 namespace simple_shapes {
 	// —игнатуры требуемых внешних функций
-	int Perimeter(rectangle &r);
-	int Perimeter(circle &c);
-	int Perimeter(triangle &t);
+	int Perimeter(Rectangle &r);
+	int Perimeter(Circle &c);
+	int Perimeter(Triangle &t);
 	// ¬вод параметров обобщенной фигуры из файла
-	int Perimeter(shape &s)
+	int Perimeter(Shape &s)
 	{
 		switch (s.k) {
-		case shape::key::RECTANGLE:
+		case Shape::key::RECTANGLE:
 			return Perimeter(s.r);
-		case shape::key::CIRCLE:
+		case Shape::key::CIRCLE:
 				return Perimeter(s.c);
-		case shape::key::TRIANGLE:
+		case Shape::key::TRIANGLE:
 			return Perimeter(s.t);
 		default:
 			return -1;
