@@ -4,8 +4,8 @@
 using namespace std;
 namespace simple_shapes {
 	// ¬вод параметров круга из потока
-	void In(circle &t, ifstream &ifst)
+	void In(circle &C, ifstream &ifst)
 	{
-		ifst >> t.a >> t.b >> t.colour;
+		ifst >> C.x >> C.y >> C.R >> C.colour;
 	}
 } // end simple_shapes namespace

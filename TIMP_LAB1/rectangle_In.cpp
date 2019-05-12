@@ -4,7 +4,7 @@
 using namespace std;
 namespace simple_shapes {
 	// ¬вод параметров пр€моугольника из файла
-	void In(rectangle &r, ifstream &ifst) {
-		ifst >> r.x >> r.y >> r.colour;
+	void In(rectangle &R, ifstream &ifst) {
+		ifst >> R.x >> R.y >> R.colour;
 	}
 } // end simple_shapes namespace

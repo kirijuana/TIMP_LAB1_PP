@@ -9,6 +9,7 @@ namespace simple_shapes {
 	void Clear(container &c);
 	void In(container &c, ifstream &ifst);
 	void Out(container &c, ofstream &ofst);
+	void MultiMethod(container &c, ofstream &ofst);
 }
 using namespace simple_shapes;
 int main(int argc, char* argv[]) {
@@ -18,13 +19,11 @@ int main(int argc, char* argv[]) {
 		exit(1);
 	}
 	ifstream ifst(argv[1]);
-	//ifst.open("C:\\Users\\kirijuana\\Desktop\\in.txt.txt");
 	if (!ifst)
 	{
 		return -1;
 	}
 	ofstream ofst(argv[2]);;
-	//ofst.open("C:\\Users\\kirijuana\\Desktop\\out.txt.txt");
 	if (!ofst)
 	{
 		return -1;
@@ -35,6 +34,7 @@ int main(int argc, char* argv[]) {
 	In(c, ifst);
 	ofst << "Filled container. " << endl;
 	Out(c, ofst);
+	MultiMethod(c, ofst);
 	Clear(c);
 	ofst << "Empty container. " << endl;
 	Out(c, ofst);
